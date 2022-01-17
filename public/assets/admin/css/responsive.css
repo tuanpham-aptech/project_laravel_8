@@ -1,0 +1,77 @@
+@media(max-width:991px) {
+    .brick, .top-info-email,.top_pay-money,.search_form,.cart-info,.collection-select,.bottom-header{
+        display:none;
+    }
+
+    .search-form-mobile,.btn-menu {
+        display:block;
+    }
+
+    .cart-icon {
+        background-color: #fff;
+    }
+
+    .cart-icon i {
+        color:#333;
+    }
+
+    .menu-select-mobi {
+        width:100%;
+        margin: 15px;
+        height:auto;
+        background-color:#333;
+    }
+
+    .menu-select-mobi > ul > li {
+        list-style: none;
+        position: relative;
+    }
+
+    .menu-select-mobi >ul > li > a {
+        color:#fff;
+        display:block;
+        text-transform: uppercase;
+        padding:4px 15px;
+        font-family: Roboto, "Helvetica Neue";
+    }
+
+    .menu-select-mobi>ul > li >a>i {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .menu-select-mobi>ul > li >a:hover {
+        color:var(--text-hover);
+    }
+
+    .menu-sub-mobile {
+        with:100%;
+        height: auto;
+        background-color: #999696;
+    }
+
+    .menu-sub-mobile a{
+        display: block;
+        padding:2px 30px;
+        color:#fff;
+    }
+
+    .collection-info h4 {
+        font-size:14px;
+    }
+
+    .btnleft, .collection-info p{
+        display: none;
+    }
+
+    .collection-item {
+        width:100%;
+        height:150px;
+    }
+
+    .collection-item.big {
+        width:100%;
+        height:300px;
+    }
+
+}

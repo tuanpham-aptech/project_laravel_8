@@ -1,0 +1,47 @@
+.breadcrumb-shop {
+    background-color: transparent;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.breadcrumb-list {
+    margin: 0;
+    font-size: 1.14286em;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.item-breadcrumb {
+    display: inline;
+    list-style: none;
+}
+
+.item-breadcrumb a,.item-breadcrumb > i{
+    color:var(--text-primary);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.item-breadcrumb > a:last-child {
+    color:var(--text-hover);
+}
+
+.item-breadcrumb a:hover {
+    text-decoration: none;
+    color:var(--text-hover);
+}
+
+.item-breadcrumb span {
+    display: inline;
+    color: #333;
+}
+
+.item-breadcrumb span .fas {
+    color:var(--text-primary);
+    font-size:0.875rem;
+    margin:4px;
+    font-weight: 600;
+}
