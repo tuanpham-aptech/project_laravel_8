@@ -12,7 +12,7 @@
     </a>
 </div>
 <table class="table table-bordered">
-    <thead class="thead-light">
+    <thead class="thead-light bg-primary">
         <th class="text-center" scope="col">ID</th>
         <th class="text-center" scope="col">Tên </th>
         <th class="text-center" scope="col">Email</th>

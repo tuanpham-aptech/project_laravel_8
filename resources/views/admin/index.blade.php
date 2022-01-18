@@ -12,7 +12,7 @@
                             <li class="{{Request::is('admin/transactions') ? 'active' : ''}}"><a href="{{route('list-transactions')}}"><i class="fa fa-desktop"></i><span>Thông tin đơn hàng </span></a></li>
                             <li class="{{Request::is('admin/users') ? 'active' : ''}}"><a href="{{route('list-users')}}"><i class="fa fa-desktop"></i><span>Người dùng </span></a></li>
                             <li class="{{Request::is('admin/articals') ? 'active' : ''}}"><a href="{{route('list-articals')}}"><i class="fa fa-desktop"></i><span>Tin tức </span></a></li>
-                            <li class="{{Request::is('admin/users') ? 'active' : ''}}"><a href="{{route('list-users')}}"><i class="fa fa-desktop"></i><span>Liên hệ </span></a></li>
+                            <li class="{{Request::is('admin/contacts') ? 'active' : ''}}"><a href="{{route('list-contacts')}}"><i class="fa fa-desktop"></i><span>Liên hệ </span></a></li>
                         </ul>
                     </div>
                 </nav>

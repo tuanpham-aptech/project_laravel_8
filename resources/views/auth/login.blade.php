@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Đăng nhập </title>
     <link rel="stylesheet" href="{{ url('css/main.css')}}">
 </head>
 <body>
     {{-- @include('header') --}}
     <form action="" method="post" class="form" style="margin:auto; width:400px;">
-    <h2>Login</h2>
+    <h2>Đăng nhập </h2>
     @csrf
         <div class="form-group">
             <input type="email" name="email"class="textbox" placeholder="Nhập email của bạn " value="{{old('email')}}">

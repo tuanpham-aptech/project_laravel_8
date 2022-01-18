@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Đăng ký</title>
     <link rel="stylesheet" href="{{ url('css/main.css')}}">
 </head>
 <body>
 <form action="" method="post" class="form">
-    <h2>Sign Up</h2>
+    <h2>Đăng ký </h2>
     @csrf
         <div class="form-group">
             <input type="text" name="name"class="textbox" placeholder="Nhập tên đăng nhập" value="{{old('name')}}" >

@@ -9,8 +9,23 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    //
     public function index(){
+        $contacts = Contact::all();
+        $page_title = 'THÔNG TIN LIÊN HỆ';
+        return view('admin.contacts.contacts',[
+            'page_title'=>$page_title,
+            'contacts'=>$contacts
+        ]);
+    }
+
+    public function actionActive($id){
+        $c = Contact::find($id);
+        $c->c_status = 1;
+        $c->save();
+        return redirect()->back()->with('success','Xử lý bài viết thành công !!!');
+    }
+
+    public function showFormContact(){
         $cat = new Category();
         $page_title = 'THÔNG TIN LIÊN HỆ CHỦ CỬA HÀNG ';
         $categories = $cat->getCategories();
@@ -32,4 +47,11 @@ class ContactController extends Controller
         $con->save();
         return redirect()->route('contact');
     }
+
+    public function deleteContact($id) {
+        $deleteItem = Contact::find($id);
+        $deleteItem->deleteContact($id);
+        return redirect()->route('list-contacts')->with('success','Xoá thành công liên hệ ');
+    }
+
 }

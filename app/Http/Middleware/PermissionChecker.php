@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class PermissionChecker
@@ -18,8 +19,8 @@ class PermissionChecker
     public function handle(Request $request, Closure $next,$roles)
     {
         $allowRoles = (explode('|',$roles));
-        // sau đó sử dụng hàm in_array(biến cần kiểm tra, mảng )
-        // trong đó Auth::user()->getStrType() là status trong bảng user
+        // dd(Auth::user()->getStrType());
+        // dd($allowRoles);
         if(in_array(Auth::user()->getStrType(),$allowRoles)){
             return $next($request);
         }

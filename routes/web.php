@@ -59,6 +59,11 @@ Route::group(['prefix'=>'admin','middleware'=>'permission.checker:admin|member']
         Route::get('action-active-articals/{id}',[ArticalController::class,'actionActive'])->name('action-active-articals');
         // Route::get('new/{slug}-{id}',[NewController::class,'newDetail'])->name('view-new-detail');
     });
+    Route::group(['prefix' =>'contacts'],function(){
+        Route::get('contacts',[ContactController::class,'index'])->name('list-contacts');
+        Route::get('action-active-contacts/{id}',[ContactController::class,'actionActive'])->name('action-active-contacts');
+        Route::get('delete-contacts/{id}',[ContactController::class,'deleteContact'])->name('delete-contacts');
+    });
 
      Route::get('logout',[LogoutController::class,'index'])->name('logout');
      Route::get('/',[DashboardController::class,'index'])->name('dashboard');
@@ -80,7 +85,7 @@ Route::prefix('shopping')->group(function(){
 Route::get('change-password',[UserController::class,'showFormSendLink'])->name('show-form-send-link');
 Route::post('change-password',[UserController::class,'sendResetLink'])->name('change-password-link');
 
-Route::get('contact',[ContactController::class,'index'])->name('contact');
+Route::get('contact',[ContactController::class,'showFormContact'])->name('contact');
 Route::post('contact',[ContactController::class,'saveContact']);
 
 Route::get('news',[ArticalController::class,'newDisplayClient'])->name('news');
