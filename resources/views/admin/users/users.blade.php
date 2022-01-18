@@ -36,7 +36,7 @@
             <div>
                 <form action="{{url('admin/users/delete-user/'.$us->id)}}" method="post">
                     @csrf
-                    <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá sản phẩm này !')">
+                    <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá người dùng này !')">
                         Xoá
                     </button>
                 </form>

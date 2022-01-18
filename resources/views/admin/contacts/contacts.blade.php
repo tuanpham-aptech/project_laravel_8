@@ -35,7 +35,7 @@
             <section style="display: flex; align-item:center; ">
                 <div>
                     <a href="{{url('admin/contacts/delete-contacts/'.$c->id)}}">
-                        <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá sản phẩm này !')">
+                        <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá liên hệ này !')">
                             <i class="fas fa-trash-alt"></i>
                         </button>
                     </a>

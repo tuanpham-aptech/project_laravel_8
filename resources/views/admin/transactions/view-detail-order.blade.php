@@ -27,7 +27,7 @@
         <td>
             <div>
                 <a href="">
-                    <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá sản phẩm này !')">
+                    <button class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá đơn hàng này !')">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </a>
