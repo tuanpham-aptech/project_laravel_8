@@ -9,7 +9,7 @@
     </a>
 </div>
 <table class="table table-bordered">
-    <thead class="thead-primary bg-primary">
+    <thead class="thead-light bg-primary">
         <th class="text-center" scope="col">ID</th>
         <th class="text-center" scope="col">Danh mục</th>
         <th class="text-center" scope="col">Sản phẩm</th>

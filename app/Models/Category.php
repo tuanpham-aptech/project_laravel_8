@@ -12,7 +12,7 @@ class Category extends Model
     protected $table='categories';
 
     public function getCategories(){
-        $data = DB::table('categories')->get();
+        $data = DB::table('categories')->paginate(3);
         return $data;
     }
 

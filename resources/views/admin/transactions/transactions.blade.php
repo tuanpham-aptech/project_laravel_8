@@ -2,7 +2,7 @@
 @section('content')
 <h3 class="text-center" style="color:blue; text-transform:uppercase">{{$page_title}}</h3>
 <table class="table table-bordered">
-    <thead class="thead-primary bg-primary">
+    <thead class="thead-light bg-primary">
         <th class="text-center" scope="col">ID</th>
         <th class="text-center" scope="col">Tên người mua</th>
         <th class="text-center" scope="col">Địa chỉ </th>

@@ -22,7 +22,6 @@
         <th class="text-center" scope="col">Thời gian tạo</th>
         <th class="text-center" scope="col">Thời gian cập nhật </th>
         <th class="text-center" scope="col">Hành động</th>
-        {{-- <th></th> --}}
       </tr>
     </thead>
     <tbody>
@@ -53,12 +52,25 @@
                 </a>
             </div>
         </td>
-        {{-- <td>
-
-        </td> --}}
       </tr>
       @endforeach
     </tbody>
-  </table>
+</table>
+    <div class="page-wrap">
+        {!!$categories->links('admin.paginate')!!}
+    </div>
 @endif
 @endsection
+<style>
+    .w-5 {
+        display: none
+    }
+
+    /* p.text-sm.leading-5 {
+        display: none
+    }
+    nav.flex {
+        width:100%;
+    } */
+</style>
+

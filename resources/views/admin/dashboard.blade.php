@@ -1,4 +1,4 @@
 @extends('admin.index')
 @section('content')
-<h2>Trang chủ </h2>
+<h2>Trang quản trị </h2>
 @endsection

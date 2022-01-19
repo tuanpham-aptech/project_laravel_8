@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nội thất Phạm Tuân </title>
     <!-- BOOTSTRAP STYLES-->
-    <link href="{{url('assets/admin/css/header.css')}}" rel="stylesheet" />
-    <link href="{{url('assets/admin/css/custom.css')}}" rel="stylesheet" />
-    <link href="{{url('assets/admin/css/responsive.css')}}" rel="stylesheet" />
+    <link href="{{url('assets/admin/css/header.css?v=1')}}" rel="stylesheet" />
+    <link href="{{url('assets/admin/css/custom.css?v=1')}}" rel="stylesheet" />
+    <link href="{{url('assets/admin/css/responsive.css?v=1')}}" rel="stylesheet" />
 
-    <link href="{{url('assets/admin/css/bootstrap.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- FONTAWESOME STYLES-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- CUSTOM STYLES-->
@@ -18,7 +18,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'
         type='text/css' />
 </head>
-
 <body>
     <header class="header">
         <div class="top-header">

@@ -9,7 +9,7 @@
     </a>
 </div>
 <table class="table table-bordered">
-    <thead class="thead-primary bg-primary">
+    <thead class="thead-light bg-primary">
         <th class="text-center" scope="col">STT</th>
         <th class="text-center" scope="col">Tên bài viết</th>
         <th class="text-center" scope="col">Mô tả</th>
