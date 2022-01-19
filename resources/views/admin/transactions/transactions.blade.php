@@ -55,4 +55,7 @@
       @endif
     </tbody>
 </table>
+<div class="page-wrap">
+    {!!$transactions->links('admin.paginate')!!}
+</div>
 @endsection

@@ -14,7 +14,7 @@ class TransactionController extends Controller
 {
     //
     public function index(){
-        $transactions = Transaction::paginate(10);
+        $transactions = Transaction::paginate(4);
         $page_title = 'THÔNG TIN ĐƠN HÀNG ';
         return view('admin.transactions.transactions',[
             'page_title'=>$page_title,
@@ -44,9 +44,6 @@ class TransactionController extends Controller
         $transactions = Transaction::find($id);
         $orders = Order::where('or_transaction_id',$id)->get();
         if($orders){
-            // cập nhật lại trạng thái
-            // trừ đi số lượng sản phẩm đã mua
-            // tăng pay sản phẩm để biết sp nào bán chạy
             foreach($orders as $order){
                 $product = Product::find($order->or_product_id);
                 $product->pro_quantity = $product->pro_quantity - $product->pro_qty;

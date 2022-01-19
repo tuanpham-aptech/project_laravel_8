@@ -44,7 +44,7 @@ class User extends Authenticatable
     ];
 
     public function getAll() {
-        $data = DB::select('select * from users');
+        $data = DB::table('users')->paginate(3);
         return $data;
     }
 

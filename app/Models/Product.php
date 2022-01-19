@@ -11,9 +11,10 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = 'products';
+    protected $tables = 'categories';
 
-    public function getAllProduct(){
-        $data = DB::table('products')->paginate(10);
+    public function allProduct(){
+        $data = DB::select("select *from products");
         return $data;
     }
 

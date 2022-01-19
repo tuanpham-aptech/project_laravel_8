@@ -13,7 +13,7 @@
 </div>
 <table class="table table-bordered">
     <thead class="thead-light bg-primary">
-        <th class="text-center" scope="col">ID</th>
+        <th class="text-center" scope="col">STT</th>
         <th class="text-center" scope="col">Tên </th>
         <th class="text-center" scope="col">Email</th>
         <th class="text-center" scope="col">Trạng thái</th>
@@ -24,6 +24,7 @@
       </tr>
     </thead>
     <tbody>
+        @php $i=1; @endphp
         @foreach($users as $us)
       <tr>
         <td>{{$us->id}}</td>
@@ -49,12 +50,18 @@
                 </a>
             </div>
         </td>
-        {{-- <td>
-
-        </td> --}}
       </tr>
+      @php $i++; @endphp
       @endforeach
     </tbody>
   </table>
+  <div class="page-wrap">
+    {!!$users->links('admin.paginate')!!}
+</div>
 @endif
 @endsection
+<style>
+.w-5 {
+        display: none
+    }
+</style>

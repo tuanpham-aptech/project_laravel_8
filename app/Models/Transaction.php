@@ -22,7 +22,6 @@ class Transaction extends Model
             ->where('transactions.id', $id)
             ->select('transactions.*', 'orders.*', 'products.pro_image')
             ->get();
-
         return $data;
     }
 

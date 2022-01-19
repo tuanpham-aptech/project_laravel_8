@@ -48,4 +48,12 @@
       @endif
     </tbody>
 </table>
+<div class="page-wrap">
+    {!!$contacts->links('admin.paginate')!!}
+</div>
 @endsection
+<style>
+.w-5 {
+        display: none
+    }
+</style>

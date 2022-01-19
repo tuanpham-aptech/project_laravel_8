@@ -10,7 +10,7 @@
 </div>
 <table class="table table-bordered">
     <thead class="thead-light bg-primary">
-        <th class="text-center" scope="col">ID</th>
+        <th class="text-center" scope="col">STT</th>
         <th class="text-center" scope="col">Danh mục</th>
         <th class="text-center" scope="col">Sản phẩm</th>
         <th class="text-center" scope="col">Ảnh</th>
@@ -27,6 +27,7 @@
       </tr>
     </thead>
     <tbody>
+        @php $i=1; @endphp
         @if(isset($products))
         @foreach($products as $pro)
       <tr>
@@ -59,12 +60,18 @@
                 </a>
             </div>
         </td>
-        {{-- <td>
-
-        </td> --}}
       </tr>
+      @php $i++; @endphp
       @endforeach
       @endif
     </tbody>
 </table>
+<div class="page-wrap">
+    {!!$products->links('admin.paginate')!!}
+</div>
 @endsection
+<style>
+.w-5 {
+        display: none
+    }
+</style>

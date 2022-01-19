@@ -13,7 +13,7 @@
 </div>
 <table class="table table-bordered">
     <thead class="thead-light bg-primary">
-        <th class="text-center" scope="col">ID</th>
+        <th class="text-center" scope="col">STT</th>
         <th class="text-center" scope="col">Tên </th>
         <th class="text-center" scope="col">Slug</th>
         <th class="text-center" scope="col">Active</th>
@@ -25,6 +25,7 @@
       </tr>
     </thead>
     <tbody>
+        @php $i=1; @endphp
         @foreach($categories as $cat)
       <tr>
         <td>{{$cat->id}}</td>
@@ -53,6 +54,7 @@
             </div>
         </td>
       </tr>
+      @php $i++; @endphp
       @endforeach
     </tbody>
 </table>
@@ -62,15 +64,8 @@
 @endif
 @endsection
 <style>
-    .w-5 {
+.w-5 {
         display: none
     }
-
-    /* p.text-sm.leading-5 {
-        display: none
-    }
-    nav.flex {
-        width:100%;
-    } */
 </style>
 

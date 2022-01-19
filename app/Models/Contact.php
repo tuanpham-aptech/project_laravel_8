@@ -11,6 +11,10 @@ class Contact extends Model
     use HasFactory;
     protected $table = 'contacts';
 
+    public function listContact(){
+        return DB::table('contacts')->paginate(3);
+    }
+
     public function deleteContact($id) {
         return DB::table('contacts')->where('id', $id)->delete();
     }

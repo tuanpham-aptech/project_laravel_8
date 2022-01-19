@@ -12,8 +12,7 @@ class ProductController extends Controller
 {
     public function index(){
 
-        $products = Product::all();
-
+        $products = Product::paginate(3);
         $page_title = 'BẢNG SẢN PHẨM';
         return view('admin.products.products',compact('products'),compact('page_title'));
     }

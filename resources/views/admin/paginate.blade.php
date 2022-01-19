@@ -9,7 +9,7 @@
                     <span aria-hidden="true">&lt;</span>
                 </li>
             @else
-                <li>
+                <li class="pg-item">
                     <a href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')">&lt;</a>
                 </li>
             @endif
@@ -56,5 +56,10 @@
         width:30px;
         border: 0.001px solid #cac6c6;
         border-radius: 50%;
+    }
+
+    .pg-list .pg-item a{
+        text-decoration: none;
+        font-size: 16px;
     }
 </style>

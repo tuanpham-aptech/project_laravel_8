@@ -10,7 +10,8 @@ use App\Models\Contact;
 class ContactController extends Controller
 {
     public function index(){
-        $contacts = Contact::all();
+        $con = new Contact();
+        $contacts = $con->listContact();
         $page_title = 'THÔNG TIN LIÊN HỆ';
         return view('admin.contacts.contacts',[
             'page_title'=>$page_title,
