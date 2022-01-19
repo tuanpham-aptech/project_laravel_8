@@ -17,7 +17,7 @@ class ArticalController extends Controller
 {
     public function index(){
 
-        $articals= Artical::all();
+        $articals= Artical::paginate(3);
 
         $page_title = 'QUẢN LÝ BÀI VIẾT';
         return view('admin.articals.articals',[
