@@ -60,4 +60,10 @@ class User extends Authenticatable
     public function profile(){
         return $this->hasOne(Profile::class,'user_id','id');
     }
+
+    public function statistical($table) {
+        return DB::table($table)
+        ->select('id')
+        ->get()->count();
+    }
 }
