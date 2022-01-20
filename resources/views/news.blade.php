@@ -365,7 +365,7 @@ main {
                             <div class="col-md-12 col-sm-12">
                                 <p class="news-content">{{$ar->ns_content}}</p>
                                 <div class="button-wrap">
-                                    <a href="#" style="color:#001" class="button">Xem Thêm</a>
+                                    <a href="{{route('detail-artical',[$ar->ns_slug,$ar->id])}}" style="color:#001" class="button">Xem Thêm</a>
                                 </div>
                             </div>
                         </div>

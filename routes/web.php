@@ -89,6 +89,7 @@ Route::get('contact',[ContactController::class,'showFormContact'])->name('contac
 Route::post('contact',[ContactController::class,'saveContact']);
 
 Route::get('news',[ArticalController::class,'newDisplayClient'])->name('news');
+Route::get('articals/detail-artical/{slug}-{id}',[ArticalController::class,'getDetailArticle'])->name('detail-artical');
 
 Route::get('category/{slug}-{id}',[CategoriesController::class,'getListProduct'])->name('get-list-product');
 Route::get('product/{slug}-{id}',[ProductController::class,'productDetail'])->name('product-detail');

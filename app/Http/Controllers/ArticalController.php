@@ -121,4 +121,21 @@ class ArticalController extends Controller
         return redirect()->route('list-transactions')->with('success','Đã xoá đơn hàng !!!');
     }
 
+    public function getDetailArticle(Request $req){
+        $cat = new Category();
+        $categories = $cat->getCategories();
+        $url = $req->segment(3);
+        $url = preg_split('/(-)/i',$url);
+        $id = array_pop($url);
+        // dd($id);
+        if($id){
+        $articals = Artical::where(['ns_active'=>1])->find($id);
+        }
+        // dd($articals);
+        return view('detail-artical',[
+            'articals'=>$articals,
+            'categories'=>$categories,
+        ]);
+    }
+
 }

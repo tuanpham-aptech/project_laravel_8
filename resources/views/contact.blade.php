@@ -21,7 +21,7 @@
                         <div class="form-group row">
                             <label for="c_name" class="col-sm-2 col-form-label">Họ và tên </label>
                             <div class="col-sm-8">
-                                <input type="text" id="c_name" class="form-control" value="{{ old('c_name') }}" autofocus placeholder="Nhập tên danh mục " name="c_name">
+                                <input type="text" id="c_name" class="form-control" value="{{ old('c_name') }}" autofocus placeholder="Nhập họ và tên  " name="c_name">
                             </div>
                         </div>
                         <div class="form-group row">

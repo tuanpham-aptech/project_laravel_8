@@ -12,7 +12,7 @@ class Artical extends Model
     protected $table = 'articals';
 
     public function getArticalClient() {
-        return DB::select('select ns_name,ns_content,ns_image from articals where ns_active =1 order by rand() limit 3');
+        return DB::select('select id,ns_name,ns_slug,ns_content,ns_image from articals where ns_active =1 order by rand() limit 3');
     }
 
     public function deleteArticle($id){
