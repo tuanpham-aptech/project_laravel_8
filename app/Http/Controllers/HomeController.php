@@ -79,5 +79,22 @@ class HomeController extends Controller
         ]);
     }
 
+    // public function latestProduct(Request $req){
+    //     $cat = new Category();
+    //     $pro = new Product();
+    //     $ar = new Artical();
+    //     $categories = $cat->getCategories();
+    //     $search = $req->input('search');
+    //     $data = $pro->searchProductByName($search);
+    //     $articals = $ar->getArticalClient();
+    //     $products = $pro->getLatestProduct();
+    //     return view('latest-product',[
+    //         'categories'=>$categories,
+    //         'data' =>$data,
+    //         'articals'=>$articals,
+    //         'products'=>$products
+    //     ]);
+    // }
+
 }
 

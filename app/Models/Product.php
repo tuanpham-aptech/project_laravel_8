@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 use App\Models\Category;
 
 class Product extends Model
 {
     use HasFactory;
     protected $table = 'products';
-    protected $tables = 'categories';
 
     public function allProduct(){
         $data = DB::select("select *from products");
@@ -49,6 +49,12 @@ class Product extends Model
                 ->get();
         return $data;
     }
+
+    // public function getLatestProduct(){
+    //     $mytime = now();
+    //     dd($mytime);
+    //     return DB::table('products');
+    // }
 
 
 }
