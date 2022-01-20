@@ -443,7 +443,7 @@ main {
                 <div class="content-title">
                     <h2>Tất cả sản phẩm </h2>
                     <div class="tabs-title">
-                        <a href="#!">Mới nhất </a>
+                        <a href="{{route('latest-product')}}">Mới nhất </a>
                         <a href="{{route('product-hot')}}">Nổi bật</a>
                         <a href="{{route('product-selling')}}">Bán chạy</a>
                     </div>
@@ -505,7 +505,7 @@ main {
                 <div class="content-title">
                     <h2>Sản phẩm nổi bật </h2>
                     <div class="tabs-title">
-                        <a href="#!">Mới nhất </a>
+                        <a href="{{route('latest-product')}}">Mới nhất </a>
                         <a href="{{route('product-hot')}}">Nổi bật</a>
                         <a href="{{route('product-selling')}}">Bán chạy</a>
                     </div>
@@ -546,7 +546,7 @@ main {
                 <div class="content-title">
                     <h2>Sản phẩm bán chạy</h2>
                     <div class="tabs-title">
-                        <a href="#!">Mới nhất </a>
+                        <a href="{{route('latest-product')}}">Mới nhất </a>
                         <a href="{{route('product-hot')}}">Nổi bật</a>
                         <a href="{{route('product-selling')}}">Bán chạy</a>
                     </div>

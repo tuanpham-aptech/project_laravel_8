@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use App\Models\Category;
 
 class Product extends Model
@@ -50,11 +50,11 @@ class Product extends Model
         return $data;
     }
 
-    // public function getLatestProduct(){
-    //     $mytime = now();
-    //     dd($mytime);
-    //     return DB::table('products');
-    // }
+    public function getLatestProduct(){
+        return $data = DB::table('products')
+            ->where('pro_active',1)
+            ->get();
+    }
 
 
 }

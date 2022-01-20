@@ -443,7 +443,7 @@ main {
                 <div class="content-title">
                     <h2>{{$page_title}}</h2>
                     <div class="tabs-title">
-                        <a href="#!">Mới nhất </a>
+                        <a href="{{route('latest-product')}}">Mới nhất </a>
                         <a href="{{route('product-hot')}}">Nổi bật</a>
                         <a href="{{route('product-selling')}}">Bán chạy</a>
                     </div>

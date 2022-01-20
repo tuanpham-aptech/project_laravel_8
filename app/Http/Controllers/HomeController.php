@@ -79,22 +79,32 @@ class HomeController extends Controller
         ]);
     }
 
-    // public function latestProduct(Request $req){
-    //     $cat = new Category();
-    //     $pro = new Product();
-    //     $ar = new Artical();
-    //     $categories = $cat->getCategories();
-    //     $search = $req->input('search');
-    //     $data = $pro->searchProductByName($search);
-    //     $articals = $ar->getArticalClient();
-    //     $products = $pro->getLatestProduct();
-    //     return view('latest-product',[
-    //         'categories'=>$categories,
-    //         'data' =>$data,
-    //         'articals'=>$articals,
-    //         'products'=>$products
-    //     ]);
-    // }
+    public function latestProduct(Request $req){
+        $date = Carbon::now();
+        $cat = new Category();
+        $pro = new Product();
+        $ar = new Artical();
+        $page_title ="SẢN PHẨM BÁN CHẠY";
+        $categories = $cat->getCategories();
+        $search = $req->input('search');
+        $data = $pro->searchProductByName($search);
+        $articals = $ar->getArticalClient();
+        $productaftercompleted =array();
+        $products = $pro->getLatestProduct();
+        foreach($products as $p){
+        if($date->diffInDays($p->created_at)<30){
+            array_push($productaftercompleted,$p);
+        }
+        }
+
+        return view('latest-product',[
+            'categories'=>$categories,
+            'data' =>$data,
+            'page_title'=>$page_title,
+            'articals'=>$articals,
+            'products'=>$productaftercompleted
+        ]);
+    }
 
 }
 

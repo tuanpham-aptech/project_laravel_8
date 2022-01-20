@@ -95,7 +95,7 @@ Route::get('category/{slug}-{id}',[CategoriesController::class,'getListProduct']
 Route::get('product/{slug}-{id}',[ProductController::class,'productDetail'])->name('product-detail');
 Route::get('product/selling',[HomeController::class,'productSelling'])->name('product-selling');
 Route::get('product/hot',[HomeController::class,'productHot'])->name('product-hot');
-// Route::get('product/latest-product',[HomeController::class,'latestProduct'])->name('latest-product');
+Route::get('product/latest',[HomeController::class,'latestProduct'])->name('latest-product');
 
 Route::get('login',[LoginController::class,'index'])->name('login');
 Route::post('login',[LoginController::class,'login']);
