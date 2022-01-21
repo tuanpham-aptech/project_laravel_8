@@ -31,6 +31,11 @@
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </a>
+                <a href="{{route('bill-order',[$ts->id])}}" class="pl-1">
+                    <button class="btn btn-primary" onclick="return confirm('Bạn có muốn in đơn hàng này!')">
+                        <i class="fas fa-print"></i>
+                    </button>
+                </a>
             </div>
         </td>
         {{-- <td>

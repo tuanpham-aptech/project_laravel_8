@@ -20,7 +20,7 @@ class Transaction extends Model
             ->join('orders', 'transactions.id', '=', 'orders.or_transaction_id')
             ->join('products', 'products.id', '=', 'orders.or_product_id')
             ->where('transactions.id', $id)
-            ->select('transactions.*', 'orders.*', 'products.pro_image')
+            ->select('transactions.*', 'orders.*', 'products.*')
             ->get();
         return $data;
     }

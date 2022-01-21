@@ -14,7 +14,6 @@ use App\Models\Category;
 
 class CartController extends Controller
 {
-
     public function addToCart(Request $req, $id){
         $product = Product::select('pro_name','id','pro_price','pro_quantity','pro_image','pro_sale')->find($id);
         $product_qty = $req->input('quantity');
@@ -102,14 +101,4 @@ class CartController extends Controller
         return redirect()->back();
 
     }
-
-    // public function update($rowId) {
-    //     \Cart::session(auth()->id())->update($rowId,[
-    //         'quantity' => [
-    //             'relative' => false,
-    //             'value' => request('quantity')
-    //         ]
-    //     ]);
-    //     return back();
-    // }
 }

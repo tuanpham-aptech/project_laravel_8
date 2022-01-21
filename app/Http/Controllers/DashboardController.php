@@ -27,4 +27,8 @@ class DashboardController extends Controller
             'contact'=>$contact
         ]);
     }
+
+    // public function billOrder(){
+    //     return view('admin/invoice-order');
+    // }
 }

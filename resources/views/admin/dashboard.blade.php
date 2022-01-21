@@ -21,7 +21,7 @@
     }
 
     .card_fourth {
-        background-color: #eff70e
+        background-color: #d9e00b
     }
 
     .card_five {
@@ -76,7 +76,7 @@
             <div class="cards card_first">
                 <div class="card-single">
                     <div class="card_icon">
-                        <i class="fa fa-bars"></i>
+                        <i class="fab fa-product-hunt"></i>
                     </div>
                     <div class="card_info">
                         <h1>{{$product}} </h1>
@@ -102,7 +102,7 @@
             <div class="cards card_third">
                 <div class="card-single">
                     <div class="card_icon">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="card_info">
                         <h1>{{$user}}</h1>
@@ -115,7 +115,7 @@
             <div class="cards card_fourth">
                 <div class="card-single">
                     <div class="card_icon">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-newspaper"></i>
                     </div>
                     <div class="card_info">
                         <h1>{{$artical}} </h1>
@@ -128,7 +128,7 @@
             <div class="cards card_five">
                 <div class="card-single">
                     <div class="card_icon">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-id-card-alt"></i>
                     </div>
                     <div class="card_info">
                         <h1>{{$contact}} </h1>

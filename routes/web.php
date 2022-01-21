@@ -67,6 +67,7 @@ Route::group(['prefix'=>'admin','middleware'=>'permission.checker:admin|member']
 
      Route::get('logout',[LogoutController::class,'index'])->name('logout');
      Route::get('/',[DashboardController::class,'index'])->name('dashboard');
+     Route::get('transaction/bill/{id}',[TransactionController::class,'billOrder'])->name('bill-order');
 
      Route::get('/profile',function(){
          return view('profile');

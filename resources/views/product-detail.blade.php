@@ -445,7 +445,7 @@
                                 <a href="#!">
                                     <h4 class="product-title">{{$opro->pro_name}}</h4>
                                 </a>
-                                <p>{{$opro->pro_price}}</p>
+                                <p>{{number_format($opro->pro_price,0,',','.')}}đ</p>
                                 <a href="{{route('product-detail',[$opro->pro_slug,$opro->id])}}" class="button">Xem Thêm</a>
                             </div>
                         </div>

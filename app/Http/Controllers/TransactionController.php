@@ -9,6 +9,8 @@ use App\Models\Order;
 use App\Models\Product;
 use App\Models\Transaction;
 use App\Http\Requests\ProductRequest;
+// use Barryvdh\DomPDF\Facade as PDF;
+use PDF;
 
 class TransactionController extends Controller
 {
@@ -32,6 +34,17 @@ class TransactionController extends Controller
            'transactions'=>$transactions,
            'page_title'=>$page_title
        ]);
+    }
+
+    public function billOrder($id){
+        $ts = new Transaction();
+        $transactions = $ts->getDetailOrder($id);
+        $data = [
+           'transactions'=>$transactions
+        ];
+        $pdf = PDF::loadView('admin.invoice-order', $data)->setOptions(['defaultFont' => 'vietnamese']);
+        // dd($pdf);
+        return $pdf->download('invoice.pdf');
     }
 
     public function deleteItemOrder($id){
