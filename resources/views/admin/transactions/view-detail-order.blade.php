@@ -19,7 +19,7 @@
         @foreach($transactions as $ts)
       <tr>
         <td>{{$i}}</td>
-        <td>Name</td>
+        <td>{{$ts->pro_name}}</td>
         <td><img style="width: 150px;height: 150px;" src="{{url('myuploads/'.$ts->pro_image)}}" alt=""></td>
         <td>{{number_format($ts->or_price,0,',','.')}} đ</td>
         <td>{{$ts->or_qty}}</td>

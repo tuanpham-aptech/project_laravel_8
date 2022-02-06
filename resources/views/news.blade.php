@@ -352,7 +352,7 @@ main {
                         <div class="col-sm-5 col-md-5">
                             <div class="product-block">
                                 <div class="product-img">
-                                    <a href="">
+                                    <a href="{{route('detail-artical',[$ar->ns_slug,$ar->id])}}">
                                         <img src="{{asset('assets/images/'.$ar->ns_image)}}" alt="">
                                     </a>
                                 </div>

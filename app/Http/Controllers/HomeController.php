@@ -84,7 +84,7 @@ class HomeController extends Controller
         $cat = new Category();
         $pro = new Product();
         $ar = new Artical();
-        $page_title ="SẢN PHẨM BÁN CHẠY";
+        $page_title ="SẢN PHẨM MỚI NHẤT";
         $categories = $cat->getCategories();
         $search = $req->input('search');
         $data = $pro->searchProductByName($search);

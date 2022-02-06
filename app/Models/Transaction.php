@@ -25,7 +25,7 @@ class Transaction extends Model
         return $data;
     }
 
-    public function deleteArticle($id){
+    public function deleteItemOrder($id){
         return DB::table('transactions')
         ->where('transactions.id', $id)
         ->where('transactions.tr_status',1)

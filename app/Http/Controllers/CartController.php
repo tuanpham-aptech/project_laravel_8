@@ -65,7 +65,7 @@ class CartController extends Controller
     }
 
     public function saveInfoShoppingCart(CartInfoRequest $req){
-        $date = date('d-m-Y H:i:s');
+        $date = date('Y-m-d H:i:s');
         $totalMoney = \Cart::getSubTotal();
         $transactionId = Transaction::insertGetId([
             'tr_user_id'=>Auth::user()->id,

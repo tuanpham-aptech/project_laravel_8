@@ -426,14 +426,14 @@ main {
         @foreach ($articals as $ar)
             <div class="col-xs-12 col-sm-4 col-md-4 home-banner-pd">
                 <div class="block-banner-category">
-                    <a href="#!" class="link-banner">
+                    <a href="{{route('detail-artical',[$ar->ns_slug,$ar->id])}}" class="link-banner">
                         <img src="{{asset('assets/images/'.$ar->ns_image)}}" alt="">
                     </a>
                 </div>
                 <div class="caption_banner">
                     <span class="subtitle">{{$ar->ns_name}}</span>
                     <h3>Sofa</h3>
-                    <a href="#!" class="button">Xem Ngay</a>
+                    <a href="{{route('detail-artical',[$ar->ns_slug,$ar->id])}}" class="button">Xem Ngay</a>
                 </div>
             </div>
         @endforeach

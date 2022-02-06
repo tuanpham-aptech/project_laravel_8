@@ -50,7 +50,7 @@ class TransactionController extends Controller
     public function deleteItemOrder($id){
         $ts= Transaction::find($id);
         $ts->deleteItemOrder($id);
-        return redirect()->route('list-articals')->with('success','Đã xoá bài viết thành công !');
+        return redirect()->route('list-transactions')->with('success','Đã xoá đơn hàng thành công  !');
     }
     // xử  lý trạng thái đơn hàng
     public function actionTransaction($id){

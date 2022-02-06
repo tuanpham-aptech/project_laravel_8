@@ -15,7 +15,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\ArticalController;
 use App\Http\Controllers\ContactController;
 
-Route::group(['prefix'=>'admin','middleware'=>'permission.checker:admin|member'],function(){
+Route::group(['prefix'=>'admin','middleware'=>'permission.checker:admin'],function(){
     // Start route Product
     Route::get('products',[ProductController::class,'index'])->name('products');
     Route::get('create-product',[ProductController::class,'createProduct'])->name('create-product');

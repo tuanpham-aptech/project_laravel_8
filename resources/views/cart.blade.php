@@ -343,7 +343,7 @@ table.table-cart tr td.remove .cart:hover {
             <div class="cart-title">
                 <h1>{{$page_title}}</h1> </h1>
                 <p class="count-cart">
-                    Có <span>2 sản phẩm </span>trong giỏ hàng
+                    <span>Sản phẩm </span>trong giỏ hàng
                 </p>
             </div>
         </div>
